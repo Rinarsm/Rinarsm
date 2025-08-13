@@ -2,7 +2,7 @@
 
 Perkenalkan nama saya **Rina Rismawati**.<br>
 
-Saya seorang mahasiswa semester 6 di Institut Teknologi Garut<br>
+Saya seorang mahasiswa semester 7 di Institut Teknologi Garut<br>
 
 Saya mengambil program studi Teknik Informatika dengan berfokus pada bidang Artificial Intelligence<br>
 
