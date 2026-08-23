@@ -1,0 +1,81 @@
+<svg
+  width="1000"
+  height="220"
+  viewBox="0 0 1000 220"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Rina Rismawati</title>
+  <desc id="desc">AI &amp; Machine Learning Enthusiast</desc>
+
+  <defs>
+    <!-- Background: hitam -> ungu gelap -> ungu terang -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0B0B0F" />
+      <stop offset="50%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect
+    width="1000"
+    height="220"
+    fill="url(#backgroundGradient)"
+  />
+
+  <!-- ========================= -->
+  <!-- RINA RISMAWATI -->
+  <!-- Fade in sekali -->
+  <!-- ========================= -->
+
+  <text
+    x="500"
+    y="105"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="60"
+    font-weight="700"
+    opacity="0"
+  >
+    Rina Rismawati
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="1.5s"
+      begin="0s"
+      fill="freeze"
+    />
+  </text>
+
+  <!-- ========================= -->
+  <!-- SUBTITLE -->
+  <!-- Soft fade terus-menerus -->
+  <!-- ========================= -->
+
+  <text
+    x="500"
+    y="160"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="#C4B5FD"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="21"
+    font-weight="400"
+  >
+    AI &amp; Machine Learning Enthusiast
+
+    <animate
+      attributeName="opacity"
+      values="1;0.25;1"
+      keyTimes="0;0.5;1"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </text>
+</svg>
