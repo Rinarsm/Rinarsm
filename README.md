@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Rina Rismawati 👋
+# Rina Rismawati
 
 ### AI & Machine Learning Enthusiast
 
