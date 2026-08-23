@@ -30,9 +30,9 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Rinarsm&show_icons=true&hide_border=true&count_private=true">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Rinarsm&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rinarsm&layout=compact&hide_border=true">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rinarsm&layout=compact&theme=algolia"/>
 
 </div>
 
