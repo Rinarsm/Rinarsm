@@ -1,8 +1,6 @@
-<!-- ===================== HEADER ===================== -->
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=120&section=header&text=Rina%20Rismawati&fontSize=58&fontColor=FFFFFF&fontAlignY=58"/><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=60&section=header&text=AI%20%26%20Machine%20Learning%20Enthusiast&fontSize=24&fontColor=C4B5FD&fontAlignY=35&animation=blinking"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=190&section=header&text=Rina%20Rismawati&fontSize=58&fontColor=FFFFFF&fontAlignY=38&desc=AI%20and%20Machine%20Learning%20Enthusiast&descSize=23&descAlignY=68&animation=blinking"/>
 
 <br>
 
