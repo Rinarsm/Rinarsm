@@ -1,19 +1,49 @@
-# Halo semua! 
+<div align="center">
 
-Perkenalkan nama saya **Rina Rismawati**.<br>
+# Hi, I'm Rina Rismawati 👋
 
-Saya seorang mahasiswa semester 7 di Institut Teknologi Garut<br>
+### AI & Machine Learning Enthusiast
 
-Saya mengambil program studi Teknik Informatika dengan berfokus pada bidang Artificial Intelligence<br>
+**AI & Machine Learning Enthusiast | Coding Camp 2025 Graduate (DBS Foundation & Dicoding Indonesia) | ITS Certified in Data Analytics (Certiport) | Informatics Engineering Student - Institut Teknologi Garut**
 
-Saat pernah mengikuti program Coding Camp powered by DBS Foundation di Dicoding Indonesia, dan mengambil alur belajar Machine Learning<br>
+<br>
 
-Jika kamu tertarik untuk berkenalan denganku, silakan ikuti akun [Linkedin](https://www.linkedin.com/in/rinarsm17/) ku ya.
-
-### Github Statistic
-<p align="left">
-<a href="https://github.com/penuliscode">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=penuliscode&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=penuliscode&layout=compact&layout=compact&theme=algolia"/>
+<a href="https://www.linkedin.com/in/rinarsm17/">
+  <img src="https://img.shields.io/badge/LinkedIn-Rina%20Rismawati-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
-</p>
+
+<img src="https://komarev.com/ghpvc/?username=Rinarsm&style=for-the-badge&label=PROFILE+VIEWS">
+
+</div>
+
+---
+
+## 👩‍💻 About Me
+
+I'm an Informatics Engineering student with an interest in **Artificial Intelligence, Machine Learning, and Data Analytics**.
+
+Currently exploring and building projects related to machine learning, recommendation systems, data analysis, and other AI-based applications.
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Rinarsm&show_icons=true&hide_border=true&count_private=true">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rinarsm&layout=compact&hide_border=true">
+
+</div>
+
+---
+
+<div align="center">
+
+### Let's Connect
+
+<a href="https://www.linkedin.com/in/rinarsm17/">
+  <img src="https://img.shields.io/badge/LinkedIn-rinarsm17-0A66C2?style=flat-square&logo=linkedin&logoColor=white">
+</a>
+
+</div>
