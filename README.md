@@ -2,11 +2,7 @@
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=180&section=header&text=Rina%20Rismawati&fontSize=58&fontColor=FFFFFF&fontAlignY=50&animation=fadeIn"/>
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=800&color=A855F7&center=true&vCenter=true&repeat=true&width=700&height=45&lines=AI+%26+Machine+Learning+Enthusiast" alt="Typing SVG" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=120&section=header&text=Rina%20Rismawati&fontSize=58&fontColor=FFFFFF&fontAlignY=58"/><img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0F,50:1E1B4B,100:6D28D9&height=60&section=header&text=AI%20%26%20Machine%20Learning%20Enthusiast&fontSize=24&fontColor=C4B5FD&fontAlignY=35&animation=blinking"/>
 
 <br>
 
