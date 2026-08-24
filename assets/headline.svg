@@ -1,0 +1,44 @@
+<svg
+  width="1000"
+  height="100"
+  viewBox="0 0 1000 100"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Professional headline"
+>
+  <text
+    x="500"
+    y="34"
+    text-anchor="middle"
+    fill="#7C3AED"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="19"
+    font-weight="500"
+  >
+    AI &amp; Machine Learning Enthusiast | Coding Camp 2025 Graduate
+  </text>
+
+  <text
+    x="500"
+    y="63"
+    text-anchor="middle"
+    fill="#7C3AED"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="19"
+    font-weight="500"
+  >
+    (DBS Foundation &amp; Dicoding Indonesia) | ITS Certified in Data Analytics (Certiport)
+  </text>
+
+  <text
+    x="500"
+    y="92"
+    text-anchor="middle"
+    fill="#7C3AED"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="19"
+    font-weight="500"
+  >
+    Informatics Engineering Student - Institut Teknologi Garut
+  </text>
+</svg>
