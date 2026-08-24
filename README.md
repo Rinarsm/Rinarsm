@@ -4,7 +4,7 @@
 
 <br>
 
-**AI & Machine Learning Enthusiast | Coding Camp 2025 Graduate (DBS Foundation & Dicoding Indonesia) | ITS Certified in Data Analytics (Certiport) | Informatics Engineering Student - Institut Teknologi Garut**
+<img width="100%" src="https://capsule-render.vercel.app/api?type=transparent&height=95&text=AI%20%26%20Machine%20Learning%20Enthusiast%20%7C%20Coding%20Camp%202025%20Graduate%20(DBS%20Foundation%20%26%20Dicoding%20Indonesia)&fontSize=19&fontColor=7C3AED&fontAlignY=32&desc=ITS%20Certified%20in%20Data%20Analytics%20(Certiport)%20%7C%20Informatics%20Engineering%20Student%20-%20Institut%20Teknologi%20Garut&descSize=19&descAlignY=70"/>
 
 <br><br>
 
