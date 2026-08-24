@@ -1,0 +1,53 @@
+name: Update Language Donuts
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 1 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate_language_donuts.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update-language-donuts:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Language Donuts
+        env:
+          GITHUB_USERNAME: Rinarsm
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/generate_language_donuts.py
+
+      - name: Commit Generated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/top-languages-repo.svg
+          git add assets/top-languages-commit.svg
+
+          if git diff --staged --quiet; then
+            echo "No language changes detected."
+          else
+            git commit -m "Update dynamic language donuts"
+            git push
+          fi
