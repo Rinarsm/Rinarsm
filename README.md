@@ -74,30 +74,30 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<b>AI / Machine Learning</b>
+<h4>AI / Machine Learning</h4>
 
-<br>
 <img src="https://skillicons.dev/icons?i=py,tensorflow,sklearn,pytorch&theme=dark" />
 
-<br><br>
+<br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/> <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
 
-<br><br><br>
-<b>Data & Notebook</b>
+<br><br>
+<h4>Data & Notebook</h4>
+
+<img src="https://go-skill-icons.vercel.app/api/icons?i=jupyter,googlecolab,pandas,numpy&theme=dark" />
 
 <br>
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/> <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white"/> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/> <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 
-<br><br><br>
-<b>Development Tools</b>
+<br><br>
+<h4>Development Tools</h4>
 
-<br>
 <img src="https://skillicons.dev/icons?i=git,github&theme=dark" />
 
-<br><br>
+<br>
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 
-<br><br><br>
+<br><br>
 </div>
 <!-- LANGUAGES_TOOLS_END -->
 
