@@ -16,26 +16,31 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUTPUT_DIR = pathlib.Path("assets")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# Warna kartu
-CARD_BG = "#141321"
-RING_BG = "#252237"
+# Ukuran kartu
+CARD_WIDTH = 380
+CARD_HEIGHT = 170
 
-# Warna teks
-TITLE_COLOR = "#A855F7"
-TEXT_COLOR = "#03D8F3"
-PERCENT_COLOR = "#C4B5FD"
+# Warna
+CARD_BG = "#141321"         # sama seperti GitHub Statistics
+RING_BG = "#0F0E18"         # gelap untuk latar donut + sekat
+TITLE_COLOR = "#A855F7"     # judul ungu
+TEXT_COLOR = "#03D8F3"      # sama seperti teks stats
+PERCENT_COLOR = "#C4B5FD"   # persen lavender
 
-# Palet donut ungu tua -> ungu muda
+# Palet ungu dengan perbedaan jelas
 PURPLE_PALETTE = [
-    "#6D28D9",
-    "#7C3AED",
-    "#8B5CF6",
-    "#A855F7",
-    "#C084FC",
+    "#5B21B6",  # ungu tua
+    "#7C3AED",  # ungu
+    "#8B5CF6",  # ungu sedang
+    "#A78BFA",  # ungu muda
+    "#D8B4FE",  # lavender
 ]
 
-CARD_WIDTH = 420
-CARD_HEIGHT = 180
+# Banyak bahasa yang ditampilkan
+TOP_N = 5
+
+# Jarak pemisah antar segmen donut (semakin besar, sekat makin terlihat)
+SEGMENT_GAP = 3.0
 
 
 # =========================================================
@@ -96,17 +101,15 @@ def github_paginate(url):
 # =========================================================
 
 def get_repositories():
+    # UBAH: type=all supaya repo kontribusi lain lebih mungkin ikut dihitung
     repos = github_paginate(
         f"https://api.github.com/users/{USERNAME}/repos"
-        "?type=owner&sort=updated"
+        "?type=all&sort=updated"
     )
 
     result = []
 
     for repo in repos:
-        if repo.get("fork"):
-            continue
-
         if repo.get("archived"):
             continue
 
@@ -177,11 +180,7 @@ def calculate_commit_languages(repositories):
 
         for language, amount in languages.items():
             language_ratio = amount / language_total
-
-            totals[language] = (
-                totals.get(language, 0)
-                + (language_ratio * contributions)
-            )
+            totals[language] = totals.get(language, 0) + (language_ratio * contributions)
 
     return totals
 
@@ -198,14 +197,15 @@ def create_donut_segments(items, cx, cy, radius, stroke_width):
 
     circumference = 2 * math.pi * radius
     offset = 0
-
     result = []
 
     for language, value, color in items:
         ratio = value / total
+        full_length = circumference * ratio
 
-        dash_length = circumference * ratio
-        gap_length = circumference - dash_length
+        # Kurangi sedikit panjang segmen agar muncul sekat gelap di antaranya
+        visible_length = max(full_length - SEGMENT_GAP, 0)
+        gap_length = circumference - visible_length
 
         result.append(
             f"""
@@ -216,13 +216,14 @@ def create_donut_segments(items, cx, cy, radius, stroke_width):
     fill="none"
     stroke="{color}"
     stroke-width="{stroke_width}"
-    stroke-dasharray="{dash_length:.2f} {gap_length:.2f}"
+    stroke-linecap="butt"
+    stroke-dasharray="{visible_length:.2f} {gap_length:.2f}"
     stroke-dashoffset="{-offset:.2f}"
     transform="rotate(-90 {cx} {cy})"
   />"""
         )
 
-        offset += dash_length
+        offset += full_length
 
     return "\n".join(result)
 
@@ -236,7 +237,7 @@ def create_card(title, language_data, output_file):
         language_data.items(),
         key=lambda item: item[1],
         reverse=True,
-    )[:5]
+    )[:TOP_N]
 
     if not top_languages:
         empty_svg = f"""
@@ -246,42 +247,36 @@ def create_card(title, language_data, output_file):
   viewBox="0 0 {CARD_WIDTH} {CARD_HEIGHT}"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <rect
-    width="{CARD_WIDTH}"
-    height="{CARD_HEIGHT}"
-    rx="8"
-    fill="{CARD_BG}"
-  />
+  <rect width="{CARD_WIDTH}" height="{CARD_HEIGHT}" rx="8" fill="{CARD_BG}" />
 
   <text
     x="18"
-    y="30"
+    y="28"
     fill="{TITLE_COLOR}"
     font-family="Segoe UI, Arial, sans-serif"
-    font-size="17"
+    font-size="14"
+    font-weight="600"
   >
     {svg_escape(title)}
   </text>
 
   <text
     x="18"
-    y="65"
+    y="60"
     fill="{TEXT_COLOR}"
     font-family="Segoe UI, Arial, sans-serif"
-    font-size="12"
+    font-size="11"
   >
     No language data found
   </text>
 </svg>
 """
-
         output_file.write_text(empty_svg, encoding="utf-8")
         return
 
     total_top = sum(value for _, value in top_languages)
 
     colored_languages = []
-
     for index, (language, value) in enumerate(top_languages):
         colored_languages.append(
             (
@@ -291,44 +286,37 @@ def create_card(title, language_data, output_file):
             )
         )
 
-    # Legend
     legend = []
-
-    start_y = 55
-    gap = 21
+    start_y = 45
+    gap = 18
 
     for index, (language, value, color) in enumerate(colored_languages):
         y = start_y + (index * gap)
-
-        percentage = (
-            value / total_top * 100
-            if total_top > 0
-            else 0
-        )
+        percentage = (value / total_top * 100) if total_top > 0 else 0
 
         legend.append(
             f"""
   <rect
-    x="22"
-    y="{y - 9}"
-    width="10"
-    height="10"
-    rx="2"
+    x="18"
+    y="{y - 8}"
+    width="9"
+    height="9"
+    rx="1.5"
     fill="{color}"
   />
 
   <text
-    x="40"
+    x="34"
     y="{y}"
     fill="{TEXT_COLOR}"
     font-family="Segoe UI, Arial, sans-serif"
-    font-size="11"
+    font-size="10.5"
   >
     {svg_escape(language)}
   </text>
 
   <text
-    x="190"
+    x="160"
     y="{y}"
     text-anchor="end"
     fill="{PERCENT_COLOR}"
@@ -342,10 +330,10 @@ def create_card(title, language_data, output_file):
 
     donut = create_donut_segments(
         colored_languages,
-        cx=315,
-        cy=95,
-        radius=43,
-        stroke_width=18,
+        cx=285,
+        cy=88,
+        radius=40,
+        stroke_width=16,
     )
 
     svg = f"""
@@ -357,42 +345,33 @@ def create_card(title, language_data, output_file):
   role="img"
   aria-label="{svg_escape(title)}"
 >
+  <rect width="{CARD_WIDTH}" height="{CARD_HEIGHT}" rx="8" fill="{CARD_BG}" />
 
-  <!-- Background -->
-  <rect
-    width="{CARD_WIDTH}"
-    height="{CARD_HEIGHT}"
-    rx="8"
-    fill="{CARD_BG}"
-  />
-
-  <!-- Title -->
   <text
     x="18"
-    y="30"
+    y="28"
     fill="{TITLE_COLOR}"
     font-family="Segoe UI, Arial, sans-serif"
-    font-size="17"
+    font-size="14"
+    font-weight="600"
   >
     {svg_escape(title)}
   </text>
 
-  <!-- Legend -->
   {''.join(legend)}
 
   <!-- Donut background -->
   <circle
-    cx="315"
-    cy="95"
-    r="43"
+    cx="285"
+    cy="88"
+    r="40"
     fill="none"
     stroke="{RING_BG}"
-    stroke-width="18"
+    stroke-width="16"
   />
 
-  <!-- Donut -->
+  <!-- Donut segments -->
   {donut}
-
 </svg>
 """
 
@@ -405,9 +384,7 @@ def create_card(title, language_data, output_file):
 
 def main():
     print(f"Getting repositories for {USERNAME}...")
-
     repositories = get_repositories()
-
     print(f"Found {len(repositories)} repositories.")
 
     print("Calculating repository languages...")
