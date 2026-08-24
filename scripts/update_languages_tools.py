@@ -334,6 +334,7 @@ def generate_section(detected_tools):
         categories[tool["category"]].append(tool_key)
 
     lines = []
+
     lines.append("## 🛠️ Languages & Tools")
     lines.append("")
     lines.append('<div align="center">')
@@ -341,6 +342,7 @@ def generate_section(detected_tools):
 
     for category in CATEGORY_ORDER:
         tools_in_category = categories[category]
+
         if not tools_in_category:
             continue
 
@@ -349,29 +351,42 @@ def generate_section(detected_tools):
             key=lambda key: TOOLS[key]["order"]
         )
 
-        lines.append(f"### {category}")
-        lines.append("")
+        # Nama kategori dibuat lebih compact
+        lines.append(f"<b>{category}</b>")
+        lines.append("<br>")
 
-        # skill icons row (only if available)
-        icon_keys = [TOOLS[key]["skill_icon"] for key in tools_in_category if TOOLS[key]["skill_icon"]]
+        # Icon row
+        icon_keys = [
+            TOOLS[key]["skill_icon"]
+            for key in tools_in_category
+            if TOOLS[key]["skill_icon"]
+        ]
+
         if icon_keys:
             icon_string = ",".join(icon_keys)
-            lines.append(f'<img src="https://skillicons.dev/icons?i={icon_string}&theme=dark" />')
-            lines.append("")
-            lines.append("<br><br>")
 
-        # badge row
+            lines.append(
+                f'<img src="https://skillicons.dev/icons?i={icon_string}&theme=dark" />'
+            )
+
+            # Jarak pendek antara icon dan badge
+            lines.append("<br>")
+
+        # Badge dibuat dalam SATU BARIS
+        badges = []
+
         for key in tools_in_category:
             badge_url = TOOLS[key]["badge"]
-            lines.append(f'<img src="{badge_url}"/>')
+            badges.append(f'<img src="{badge_url}"/>')
 
-        lines.append("")
+        lines.append(" ".join(badges))
+
+        # Jarak antar kategori
         lines.append("<br><br>")
-        lines.append("")
 
     lines.append("</div>")
-    return "\n".join(lines).strip()
 
+    return "\n".join(lines).strip()
 
 def update_readme(section_text):
     if not README_PATH.exists():
