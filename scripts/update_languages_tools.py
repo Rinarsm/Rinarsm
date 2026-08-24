@@ -59,13 +59,15 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 1,
         "skill_icon": None,
+        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
         "badge": "https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white",
     },
-    "colab": {
+   "colab": {
         "name": "Google Colab",
         "category": "Data & Notebook",
         "order": 2,
         "skill_icon": None,
+        "icon_url": "https://cdn.simpleicons.org/googlecolab/F9AB00",
         "badge": "https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white",
     },
     "pandas": {
@@ -73,6 +75,7 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 3,
         "skill_icon": None,
+        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
         "badge": "https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white",
     },
     "numpy": {
@@ -80,8 +83,9 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 4,
         "skill_icon": None,
+        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
         "badge": "https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white",
-    },
+},
 
     "git": {
         "name": "Git",
@@ -351,28 +355,55 @@ def generate_section(detected_tools):
             key=lambda key: TOOLS[key]["order"]
         )
 
-        # Nama kategori dibuat lebih compact
+        # Nama kategori
         lines.append(f"<b>{category}</b>")
+        lines.append("")
         lines.append("<br>")
 
-        # Icon row
-        icon_keys = [
-            TOOLS[key]["skill_icon"]
+        # =====================================================
+        # ICON / LOGO ROW
+        # =====================================================
+
+        skill_icons = [
+            TOOLS[key].get("skill_icon")
             for key in tools_in_category
-            if TOOLS[key]["skill_icon"]
+            if TOOLS[key].get("skill_icon")
         ]
 
-        if icon_keys:
-            icon_string = ",".join(icon_keys)
+        custom_icons = [
+            TOOLS[key].get("icon_url")
+            for key in tools_in_category
+            if TOOLS[key].get("icon_url")
+        ]
+
+        # AI/ML dan Development Tools
+        if skill_icons:
+            icon_string = ",".join(skill_icons)
 
             lines.append(
                 f'<img src="https://skillicons.dev/icons?i={icon_string}&theme=dark" />'
             )
 
-            # Jarak pendek antara icon dan badge
-            lines.append("<br>")
+        # Data & Notebook
+        elif custom_icons:
+            icon_images = []
 
-        # Badge dibuat dalam SATU BARIS
+            for icon_url in custom_icons:
+                icon_images.append(
+                    f'<img src="{icon_url}" width="40" height="40"/>'
+                )
+
+            lines.append("&nbsp;&nbsp;".join(icon_images))
+
+        # Jarak logo ke badge
+        if skill_icons or custom_icons:
+            lines.append("")
+            lines.append("<br><br>")
+
+        # =====================================================
+        # BADGE ROW
+        # =====================================================
+
         badges = []
 
         for key in tools_in_category:
@@ -382,7 +413,8 @@ def generate_section(detected_tools):
         lines.append(" ".join(badges))
 
         # Jarak antar kategori
-        lines.append("<br><br>")
+        lines.append("")
+        lines.append("<br><br><br>")
 
     lines.append("</div>")
 
