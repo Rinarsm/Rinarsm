@@ -1,0 +1,171 @@
+
+<svg
+  width="420"
+  height="180"
+  viewBox="0 0 420 180"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Top Languages by Repo"
+>
+
+  <!-- Background -->
+  <rect
+    width="420"
+    height="180"
+    rx="8"
+    fill="#141321"
+  />
+
+  <!-- Title -->
+  <text
+    x="18"
+    y="30"
+    fill="#A855F7"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="17"
+  >
+    Top Languages by Repo
+  </text>
+
+  <!-- Legend -->
+  
+  <rect
+    x="22"
+    y="46"
+    width="10"
+    height="10"
+    rx="2"
+    fill="#6D28D9"
+  />
+
+  <text
+    x="40"
+    y="55"
+    fill="#03D8F3"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="11"
+  >
+    HTML
+  </text>
+
+  <text
+    x="190"
+    y="55"
+    text-anchor="end"
+    fill="#C4B5FD"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="10"
+  >
+    58.1%
+  </text>
+
+  <rect
+    x="22"
+    y="67"
+    width="10"
+    height="10"
+    rx="2"
+    fill="#7C3AED"
+  />
+
+  <text
+    x="40"
+    y="76"
+    fill="#03D8F3"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="11"
+  >
+    Jupyter Notebook
+  </text>
+
+  <text
+    x="190"
+    y="76"
+    text-anchor="end"
+    fill="#C4B5FD"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="10"
+  >
+    41.7%
+  </text>
+
+  <rect
+    x="22"
+    y="88"
+    width="10"
+    height="10"
+    rx="2"
+    fill="#8B5CF6"
+  />
+
+  <text
+    x="40"
+    y="97"
+    fill="#03D8F3"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="11"
+  >
+    Python
+  </text>
+
+  <text
+    x="190"
+    y="97"
+    text-anchor="end"
+    fill="#C4B5FD"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="10"
+  >
+    0.2%
+  </text>
+
+
+  <!-- Donut background -->
+  <circle
+    cx="315"
+    cy="95"
+    r="43"
+    fill="none"
+    stroke="#252237"
+    stroke-width="18"
+  />
+
+  <!-- Donut -->
+  
+  <circle
+    cx="315"
+    cy="95"
+    r="43"
+    fill="none"
+    stroke="#6D28D9"
+    stroke-width="18"
+    stroke-dasharray="157.03 113.14"
+    stroke-dashoffset="0.00"
+    transform="rotate(-90 315 95)"
+  />
+
+  <circle
+    cx="315"
+    cy="95"
+    r="43"
+    fill="none"
+    stroke="#7C3AED"
+    stroke-width="18"
+    stroke-dasharray="112.57 157.60"
+    stroke-dashoffset="-157.03"
+    transform="rotate(-90 315 95)"
+  />
+
+  <circle
+    cx="315"
+    cy="95"
+    r="43"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="18"
+    stroke-dasharray="0.57 269.61"
+    stroke-dashoffset="-269.61"
+    transform="rotate(-90 315 95)"
+  />
+
+</svg>
