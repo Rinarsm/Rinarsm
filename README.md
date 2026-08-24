@@ -23,9 +23,8 @@
 
 ## 👩‍💻 About Me
 
-I'm an Informatics Engineering student with an interest in **Artificial Intelligence, Machine Learning, and Data Analytics**.
-
-Currently exploring and building projects related to **machine learning, recommendation systems, data analysis, and other AI-based applications**.
+I'm an Informatics Engineering student with an interest in Artificial Intelligence, Machine Learning, and Data Analytics.
+Currently exploring and building projects related to machine learning, recommendation systems, and data analysis.
 
 ---
 
