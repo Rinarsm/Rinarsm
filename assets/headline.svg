@@ -11,7 +11,7 @@
     y="34"
     text-anchor="middle"
     fill="#7C3AED"
-    font-family="Georgia, Helvetica, sans-serif"
+    font-family="Segoe UI, Helvetica, sans-serif"
     font-size="19"
     font-weight="500"
   >
@@ -23,7 +23,7 @@
     y="63"
     text-anchor="middle"
     fill="#7C3AED"
-    font-family="Georgia, Helvetica, sans-serif"
+    font-family="Segoe UI, Helvetica, sans-serif"
     font-size="19"
     font-weight="500"
   >
@@ -35,7 +35,7 @@
     y="92"
     text-anchor="middle"
     fill="#7C3AED"
-    font-family="Georgia, Helvetica, sans-serif"
+    font-family="Segoe UI, Helvetica, sans-serif"
     font-size="19"
     font-weight="500"
   >
