@@ -76,13 +76,13 @@ Currently exploring and building projects related to machine learning, recommend
 
 ### AI / Machine Learning
 
-<img src="https://skillicons.dev/icons?i=py,tensorflow,sklearn&theme=dark" />
+<img src="https://skillicons.dev/icons?i=py,tensorflow,sklearn,pytorch&theme=dark" />
 
 <br><br>
-
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
 <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
 
 <br><br>
 
@@ -97,13 +97,13 @@ Currently exploring and building projects related to machine learning, recommend
 
 ### Development Tools
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" />
+<img src="https://skillicons.dev/icons?i=git,github&theme=dark" />
 
 <br><br>
-
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+
+<br><br>
 
 </div>
 <!-- LANGUAGES_TOOLS_END -->
