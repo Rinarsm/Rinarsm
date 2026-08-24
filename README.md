@@ -42,11 +42,16 @@ Currently exploring and building projects related to machine learning, recommend
 
 ### 💻 Top Languages
 
-<div align="center">
-
-<img height="180em" src="./assets/top-languages-repo.svg" alt="Top Languages by Repository"/> <img height="180em" src="./assets/top-languages-commit.svg" alt="Top Languages by Commit"/>
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/top-languages-repo.svg" alt="Top Languages by Repository"/>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/top-languages-commit.svg" alt="Top Languages by Commit"/>
+    </td>
+  </tr>
+</table>
 
 <br>
 
