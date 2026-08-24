@@ -1,0 +1,50 @@
+name: Update Languages and Tools Section
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 2 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update_languages_tools.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update-languages-tools:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Languages & Tools Section
+        env:
+          GITHUB_USERNAME: Rinarsm
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/update_languages_tools.py
+
+      - name: Commit README Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --staged --quiet; then
+            echo "No README changes detected."
+          else
+            git commit -m "Update dynamic Languages & Tools section"
+            git push
+          fi
