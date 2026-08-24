@@ -2,11 +2,18 @@
 
 <img width="100%" src="./assets/header.svg" alt="Rina Rismawati - AI & Machine Learning Enthusiast"/>
 
+<p align="center">
+  <span style="font-size:18px;">
+    <strong>
+      AI &amp; Machine Learning Enthusiast |
+      Coding Camp 2025 Graduate (DBS Foundation &amp; Dicoding Indonesia) |
+      ITS Certified in Data Analytics (Certiport) |
+      Informatics Engineering Student - Institut Teknologi Garut
+    </strong>
+  </span>
+</p>
+
 <br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=transparent&height=95&text=AI%20%26%20Machine%20Learning%20Enthusiast%20%7C%20Coding%20Camp%202025%20Graduate%20(DBS%20Foundation%20%26%20Dicoding%20Indonesia)&fontSize=19&fontColor=7C3AED&fontAlignY=32&desc=ITS%20Certified%20in%20Data%20Analytics%20(Certiport)%20%7C%20Informatics%20Engineering%20Student%20-%20Institut%20Teknologi%20Garut&descSize=19&descAlignY=70"/>
-
-<br><br>
 
 <a href="https://www.linkedin.com/in/rinarsm17/">
   <img src="https://img.shields.io/badge/LinkedIn-Rina%20Rismawati-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
