@@ -117,4 +117,6 @@ Currently exploring and building projects related to machine learning, recommend
 
 **Thanks for visiting my profile! 💜**
 
+<br><br>
+<img width="100%" src="./assets/footer.svg" alt="Footer"/>
 </div>
