@@ -44,13 +44,7 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img height="180em"
-src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rinarsm&theme=2077&title_color=A855F7&text_color=03D8F3&bg_color=141321&border_color=141321"
-alt="Top Languages by Repository"/>
-
-<img height="180em"
-src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rinarsm&theme=2077&title_color=A855F7&text_color=03D8F3&bg_color=141321&border_color=141321"
-alt="Top Languages by Commit"/>
+<img height="180em" src="./assets/top-languages-repo.svg" alt="Top Languages by Repository"/> <img height="180em" src="./assets/top-languages-commit.svg" alt="Top Languages by Commit"/>
 
 </div>
 
