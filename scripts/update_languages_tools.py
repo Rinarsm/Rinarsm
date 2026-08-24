@@ -333,8 +333,10 @@ def generate_section(detected_tools):
 
     for tool_key in detected_tools:
         tool = TOOLS.get(tool_key)
+
         if not tool:
             continue
+
         categories[tool["category"]].append(tool_key)
 
     lines = []
@@ -345,6 +347,7 @@ def generate_section(detected_tools):
     lines.append("")
 
     for category in CATEGORY_ORDER:
+
         tools_in_category = categories[category]
 
         if not tools_in_category:
@@ -355,13 +358,16 @@ def generate_section(detected_tools):
             key=lambda key: TOOLS[key]["order"]
         )
 
-        # Nama kategori
-        lines.append(f"<b>{category}</b>")
+        # =====================================================
+        # CATEGORY TITLE
+        # Sedikit lebih besar dari sebelumnya
+        # =====================================================
+
+        lines.append(f"<h4>{category}</h4>")
         lines.append("")
-        lines.append("<br>")
 
         # =====================================================
-        # ICON / LOGO ROW
+        # LOGO ROW
         # =====================================================
 
         skill_icons = [
@@ -370,14 +376,15 @@ def generate_section(detected_tools):
             if TOOLS[key].get("skill_icon")
         ]
 
-        custom_icons = [
-            TOOLS[key].get("icon_url")
+        extended_icons = [
+            TOOLS[key].get("extended_icon")
             for key in tools_in_category
-            if TOOLS[key].get("icon_url")
+            if TOOLS[key].get("extended_icon")
         ]
 
-        # AI/ML dan Development Tools
+        # AI / ML dan Development Tools
         if skill_icons:
+
             icon_string = ",".join(skill_icons)
 
             lines.append(
@@ -385,36 +392,41 @@ def generate_section(detected_tools):
             )
 
         # Data & Notebook
-        elif custom_icons:
-            icon_images = []
+        elif extended_icons:
 
-            for icon_url in custom_icons:
-                icon_images.append(
-                    f'<img src="{icon_url}" width="40" height="40"/>'
-                )
+            icon_string = ",".join(extended_icons)
 
-            lines.append("&nbsp;&nbsp;".join(icon_images))
+            lines.append(
+                f'<img src="https://go-skill-icons.vercel.app/api/icons?i={icon_string}&theme=dark" />'
+            )
 
-        # Jarak logo ke badge
-        if skill_icons or custom_icons:
+        # Jarak logo ke badge/tulisan
+        if skill_icons or extended_icons:
             lines.append("")
-            lines.append("<br><br>")
+            lines.append("<br>")
 
         # =====================================================
-        # BADGE ROW
+        # BADGE / TULISAN ROW
         # =====================================================
 
         badges = []
 
         for key in tools_in_category:
+
             badge_url = TOOLS[key]["badge"]
-            badges.append(f'<img src="{badge_url}"/>')
+
+            badges.append(
+                f'<img src="{badge_url}"/>'
+            )
 
         lines.append(" ".join(badges))
 
-        # Jarak antar kategori
+        # =====================================================
+        # JARAK ANTAR KATEGORI
+        # =====================================================
+
         lines.append("")
-        lines.append("<br><br><br>")
+        lines.append("<br><br>")
 
     lines.append("</div>")
 
