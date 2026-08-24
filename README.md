@@ -69,6 +69,7 @@ Currently exploring and building projects related to machine learning, recommend
 
 <!-- ===================== LANGUAGES & TOOLS ===================== -->
 
+<!-- LANGUAGES_TOOLS_START -->
 ## 🛠️ Languages & Tools
 
 <div align="center">
@@ -105,6 +106,7 @@ Currently exploring and building projects related to machine learning, recommend
 <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
 
 </div>
+<!-- LANGUAGES_TOOLS_END -->
 
 ---
 
