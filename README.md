@@ -34,7 +34,7 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Rinarsm&theme=2077" alt="GitHub Statistics"/>
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Rinarsm&theme=2077"/>
 
 </div>
 
@@ -44,9 +44,13 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rinarsm&theme=dracula" alt="Top Languages by Repository"/>
+<img height="180em"
+src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rinarsm&theme=2077&title_color=A855F7&text_color=03D8F3&bg_color=141321&border_color=141321"
+alt="Top Languages by Repository"/>
 
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rinarsm&theme=dracula" alt="Top Languages by Commit"/>
+<img height="180em"
+src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rinarsm&theme=2077&title_color=A855F7&text_color=03D8F3&bg_color=141321&border_color=141321"
+alt="Top Languages by Commit"/>
 
 </div>
 
@@ -56,7 +60,7 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img width="58%" src="https://streak-stats.demolab.com?user=Rinarsm&theme=dark&hide_border=false&border=6D28D9&background=0D1117&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=A855F7&dates=9CA3AF" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Rinarsm&theme=dark&hide_border=false&border=6D28D9&background=0D1117&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=A855F7&dates=9CA3AF" alt="GitHub Streak"/>
 
 </div>
 
