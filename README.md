@@ -2,16 +2,7 @@
 
 <img width="100%" src="./assets/header.svg" alt="Rina Rismawati - AI & Machine Learning Enthusiast"/>
 
-<p align="center">
-  <span style="font-size:18px;">
-    <strong>
-      AI &amp; Machine Learning Enthusiast |
-      Coding Camp 2025 Graduate (DBS Foundation &amp; Dicoding Indonesia) |
-      ITS Certified in Data Analytics (Certiport) |
-      Informatics Engineering Student - Institut Teknologi Garut
-    </strong>
-  </span>
-</p>
+<img width="100%" src="./assets/headline.svg" alt="AI & Machine Learning Enthusiast | Coding Camp 2025 Graduate | ITS Certified in Data Analytics | Informatics Engineering Student"/>
 
 <br>
 
