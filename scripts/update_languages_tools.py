@@ -59,15 +59,15 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 1,
         "skill_icon": None,
-        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+        "extended_icon": "jupyter",
         "badge": "https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white",
     },
-   "colab": {
+    "colab": {
         "name": "Google Colab",
         "category": "Data & Notebook",
         "order": 2,
         "skill_icon": None,
-        "icon_url": "https://cdn.simpleicons.org/googlecolab/F9AB00",
+        "extended_icon": "googlecolab",
         "badge": "https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white",
     },
     "pandas": {
@@ -75,7 +75,7 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 3,
         "skill_icon": None,
-        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+        "extended_icon": "pandas",
         "badge": "https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white",
     },
     "numpy": {
@@ -83,10 +83,10 @@ TOOLS = {
         "category": "Data & Notebook",
         "order": 4,
         "skill_icon": None,
-        "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+        "extended_icon": "numpy",
         "badge": "https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white",
-},
-
+    },
+    
     "git": {
         "name": "Git",
         "category": "Development Tools",
