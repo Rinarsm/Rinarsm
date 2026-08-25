@@ -192,7 +192,7 @@
     stroke="#5B21B6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="134.30 117.03"
+    stroke-dasharray="134.23 117.10"
     stroke-dashoffset="0.00"
     transform="rotate(-90 285 88)"
   />
@@ -205,8 +205,8 @@
     stroke="#7C3AED"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="99.48 151.85"
-    stroke-dashoffset="-137.30"
+    stroke-dasharray="99.43 151.90"
+    stroke-dashoffset="-137.23"
     transform="rotate(-90 285 88)"
   />
 
@@ -218,8 +218,8 @@
     stroke="#8B5CF6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="6.35 244.98"
-    stroke-dashoffset="-239.78"
+    stroke-dasharray="6.34 244.98"
+    stroke-dashoffset="-239.65"
     transform="rotate(-90 285 88)"
   />
 
@@ -232,7 +232,7 @@
     stroke-width="16"
     stroke-linecap="butt"
     stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-249.13"
+    stroke-dashoffset="-249.00"
     transform="rotate(-90 285 88)"
   />
 
@@ -245,7 +245,7 @@
     stroke-width="16"
     stroke-linecap="butt"
     stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-250.59"
+    stroke-dashoffset="-250.45"
     transform="rotate(-90 285 88)"
   />
 </svg>

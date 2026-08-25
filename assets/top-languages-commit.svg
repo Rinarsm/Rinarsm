@@ -37,7 +37,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10.5"
   >
-    Jupyter Notebook
+    Python
   </text>
 
   <text
@@ -48,7 +48,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    41.1%
+    42.1%
   </text>
 
   <rect
@@ -67,7 +67,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10.5"
   >
-    Python
+    Jupyter Notebook
   </text>
 
   <text
@@ -78,7 +78,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    36.2%
+    37.3%
   </text>
 
   <rect
@@ -108,7 +108,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    21.7%
+    19.7%
   </text>
 
   <rect
@@ -138,7 +138,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    1.0%
+    0.9%
   </text>
 
   <rect
@@ -192,7 +192,7 @@
     stroke="#5B21B6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="100.20 151.12"
+    stroke-dasharray="102.74 148.59"
     stroke-dashoffset="0.00"
     transform="rotate(-90 285 88)"
   />
@@ -205,8 +205,8 @@
     stroke="#7C3AED"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="88.04 163.29"
-    stroke-dashoffset="-103.20"
+    stroke-dasharray="90.74 160.59"
+    stroke-dashoffset="-105.74"
     transform="rotate(-90 285 88)"
   />
 
@@ -218,8 +218,8 @@
     stroke="#8B5CF6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="51.59 199.73"
-    stroke-dashoffset="-194.24"
+    stroke-dasharray="46.58 204.74"
+    stroke-dashoffset="-199.48"
     transform="rotate(-90 285 88)"
   />
 
@@ -232,7 +232,7 @@
     stroke-width="16"
     stroke-linecap="butt"
     stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-248.83"
+    stroke-dashoffset="-249.06"
     transform="rotate(-90 285 88)"
   />
 
