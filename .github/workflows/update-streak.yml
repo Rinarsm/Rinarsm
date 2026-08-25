@@ -1,0 +1,63 @@
+name: Update GitHub Streak
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 17:15 UTC = 00:15 WIB (Asia/Jakarta)
+    - cron: "15 17 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-streak:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Streak
+        uses: be-next/github-streak-stats-action@v1
+        with:
+          username: Rinarsm
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # File hasil
+          output-path: assets/streak.svg
+
+          # Mengikuti WIB
+          timezone: Asia/Jakarta
+
+          # Tema dasar
+          theme: dark
+          hide-border: false
+
+          # Custom warna sesuai streak Anda sekarang
+          background: 0D1117
+          stroke: 6D28D9
+          ring: A855F7
+          fire: C084FC
+
+          currStreakNum: FFFFFF
+          sideNums: FFFFFF
+
+          currStreakLabel: C084FC
+          sideLabels: A855F7
+
+          dates: 9CA3AF
+
+      - name: Commit Updated Streak
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/streak.svg
+
+          if git diff --staged --quiet; then
+            echo "No streak changes detected."
+          else
+            git commit -m "Update GitHub streak"
+            git push
+          fi
