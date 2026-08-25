@@ -1,8 +1,8 @@
 <div align="center"> 
 
-<img width="100%" src="./assets/header.svg" alt="Rina Rismawati - AI & Machine Learning Enthusiast"/>
+<img width="100%" src="./assets/header.svg" alt="Rina Rismawati - AI & Data Science Enthusiast"/>
 
-<img width="100%" src="./assets/headline.svg" alt="AI & Machine Learning Enthusiast | Coding Camp 2025 Graduate | ITS Certified in Data Analytics | Informatics Engineering Student"/>
+<img width="100%" src="./assets/headline.svg" alt="AI & Data Science Enthusiast | Coding Camp 2025 Graduate | ITS Certified in Data Analytics | Informatics Engineering Student"/>
 
 <br>
 <br>
