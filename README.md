@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center"> 
 
 <img width="100%" src="./assets/header.svg" alt="Rina Rismawati - AI & Machine Learning Enthusiast"/>
 
