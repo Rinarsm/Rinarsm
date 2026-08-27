@@ -59,7 +59,7 @@ Currently exploring and building projects related to machine learning, recommend
 
 <div align="center">
 
-<img src="./assets/streak.svg" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Rinarsm&theme=dark&timezone=Asia%2FJakarta&hide_border=false&border=6D28D9&background=0D1117&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=A855F7&dates=9CA3AF" alt="GitHub Streak"/>
 
 </div>
 
