@@ -48,7 +48,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    47.4%
+    49.1%
   </text>
 
   <rect
@@ -78,7 +78,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    33.9%
+    32.8%
   </text>
 
   <rect
@@ -108,7 +108,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    17.9%
+    17.3%
   </text>
 
   <rect
@@ -192,7 +192,7 @@
     stroke="#5B21B6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="116.09 135.24"
+    stroke-dasharray="120.35 130.97"
     stroke-dashoffset="0.00"
     transform="rotate(-90 285 88)"
   />
@@ -205,8 +205,8 @@
     stroke="#7C3AED"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="82.14 169.18"
-    stroke-dashoffset="-119.09"
+    stroke-dasharray="79.40 171.93"
+    stroke-dashoffset="-123.35"
     transform="rotate(-90 285 88)"
   />
 
@@ -218,8 +218,8 @@
     stroke="#8B5CF6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="42.04 209.29"
-    stroke-dashoffset="-204.23"
+    stroke-dasharray="40.59 210.74"
+    stroke-dashoffset="-205.75"
     transform="rotate(-90 285 88)"
   />
 
@@ -232,7 +232,7 @@
     stroke-width="16"
     stroke-linecap="butt"
     stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-249.27"
+    stroke-dashoffset="-249.34"
     transform="rotate(-90 285 88)"
   />
 
