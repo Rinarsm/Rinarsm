@@ -7,6 +7,7 @@
 <br>
 <br> 
 
+
 <a href="https://www.linkedin.com/in/rinarsm17/">
   <img src="https://img.shields.io/badge/LinkedIn-Rina%20Rismawati-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
