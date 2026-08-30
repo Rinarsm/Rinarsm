@@ -4,7 +4,6 @@
 
 <img width="100%" src="./assets/headline.svg" alt="AI & Data Science Enthusiast | Coding Camp 2025 Graduate | ITS Certified in Data Analytics | Informatics Engineering Student"/>
 
-<br>
 <br> 
 
 
