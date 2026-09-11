@@ -48,7 +48,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    50.7%
+    40.0%
   </text>
 
   <rect
@@ -78,7 +78,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    31.8%
+    25.1%
   </text>
 
   <rect
@@ -108,7 +108,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    16.8%
+    24.3%
   </text>
 
   <rect
@@ -127,7 +127,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10.5"
   >
-    Dart
+    JavaScript
   </text>
 
   <text
@@ -138,7 +138,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    0.8%
+    7.8%
   </text>
 
   <rect
@@ -157,7 +157,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10.5"
   >
-    Kotlin
+    CSS
   </text>
 
   <text
@@ -168,7 +168,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    0.0%
+    2.8%
   </text>
 
 
@@ -192,7 +192,7 @@
     stroke="#5B21B6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="124.35 126.98"
+    stroke-dasharray="97.61 153.71"
     stroke-dashoffset="0.00"
     transform="rotate(-90 285 88)"
   />
@@ -205,8 +205,8 @@
     stroke="#7C3AED"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="76.82 174.51"
-    stroke-dashoffset="-127.35"
+    stroke-dasharray="60.06 191.26"
+    stroke-dashoffset="-100.61"
     transform="rotate(-90 285 88)"
   />
 
@@ -218,8 +218,8 @@
     stroke="#8B5CF6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="39.22 212.10"
-    stroke-dashoffset="-207.17"
+    stroke-dasharray="58.06 193.27"
+    stroke-dashoffset="-163.68"
     transform="rotate(-90 285 88)"
   />
 
@@ -231,8 +231,8 @@
     stroke="#A78BFA"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-249.40"
+    stroke-dasharray="16.54 234.79"
+    stroke-dashoffset="-224.74"
     transform="rotate(-90 285 88)"
   />
 
@@ -244,8 +244,8 @@
     stroke="#D8B4FE"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="0.00 251.33"
-    stroke-dashoffset="-251.32"
+    stroke-dasharray="4.05 247.27"
+    stroke-dashoffset="-244.27"
     transform="rotate(-90 285 88)"
   />
 </svg>
