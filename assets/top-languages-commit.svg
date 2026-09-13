@@ -48,7 +48,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    40.0%
+    40.4%
   </text>
 
   <rect
@@ -78,7 +78,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    25.1%
+    24.9%
   </text>
 
   <rect
@@ -108,7 +108,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    24.3%
+    24.1%
   </text>
 
   <rect
@@ -138,7 +138,7 @@
     font-family="Segoe UI, Arial, sans-serif"
     font-size="10"
   >
-    7.8%
+    7.7%
   </text>
 
   <rect
@@ -192,7 +192,7 @@
     stroke="#5B21B6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="97.61 153.71"
+    stroke-dasharray="98.54 152.79"
     stroke-dashoffset="0.00"
     transform="rotate(-90 285 88)"
   />
@@ -205,8 +205,8 @@
     stroke="#7C3AED"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="60.06 191.26"
-    stroke-dashoffset="-100.61"
+    stroke-dasharray="59.68 191.65"
+    stroke-dashoffset="-101.54"
     transform="rotate(-90 285 88)"
   />
 
@@ -218,8 +218,8 @@
     stroke="#8B5CF6"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="58.06 193.27"
-    stroke-dashoffset="-163.68"
+    stroke-dasharray="57.69 193.64"
+    stroke-dashoffset="-164.21"
     transform="rotate(-90 285 88)"
   />
 
@@ -231,8 +231,8 @@
     stroke="#A78BFA"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="16.54 234.79"
-    stroke-dashoffset="-224.74"
+    stroke-dasharray="16.42 234.91"
+    stroke-dashoffset="-224.90"
     transform="rotate(-90 285 88)"
   />
 
@@ -244,8 +244,8 @@
     stroke="#D8B4FE"
     stroke-width="16"
     stroke-linecap="butt"
-    stroke-dasharray="4.05 247.27"
-    stroke-dashoffset="-244.27"
+    stroke-dasharray="4.01 247.32"
+    stroke-dashoffset="-244.32"
     transform="rotate(-90 285 88)"
   />
 </svg>
