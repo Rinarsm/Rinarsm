@@ -26,6 +26,8 @@
 I'm an Informatics Engineering student with an interest in Artificial Intelligence, Machine Learning, and Data Analytics.  
 Currently exploring and building projects related to machine learning, recommendation systems, and data analysis.
 
+Porfolio : **[rinarsm.xyz](https://rinarsm.xyz)**
+
 ---
 
 <!-- ===================== GITHUB STATISTICS ===================== -->
